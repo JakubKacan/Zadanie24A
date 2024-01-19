@@ -1,17 +1,23 @@
 #include <stdio.h>
 #include <math.h>
 int main(){
-int a;
-int b;
-int c;
-printf("Podaj d³ugoœæ boku a:\n");
-scanf("%d", &a);
+float a, b, c, r;
+float pi=3.14;
+float d;
+printf("Podaj dlugosc boku a:\n");
+scanf("%f", &a);
 
-printf("Podaj d³ugoœæ boku b:\n");
-scanf("%d", &b);
+printf("Podaj dlugosc boku b:\n");
+scanf("%f", &b);
 
 c = a*b;
-printf("Pole prostok¹ta wynosi: %d", c);
+printf("Pole prostokata wynosi: %f\n", c);
+
+printf("Podaj promien kola r:\n");
+scanf("%f", &r);
+
+d = pi*(r*r);
+printf("Pole kola wynosi: %f", d);
 
 return 0;
 
